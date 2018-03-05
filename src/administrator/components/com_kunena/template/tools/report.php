@@ -74,7 +74,7 @@ JHtml::_('behavior.multiselect');
 								</a>
 							</p>
 							<textarea id="report_final" class="input-block-level" name="report_final" cols="80"
-									  rows="15"><?php echo $this->escape($this->systemreport); ?></textarea>
+							          rows="15"><?php echo $this->escape($this->systemreport); ?></textarea>
 						</td>
 					</tr>
 				</table>
