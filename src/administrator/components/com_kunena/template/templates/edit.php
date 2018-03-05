@@ -96,15 +96,15 @@ JHtml::_('dropdown.init');
 												<?php foreach ($this->form->getFieldset($fieldset->name) as $field)
 													:
 													if (!$field->hidden)
-														:
+		:
 														?>
 														<tr>
 															<td width="40%"
 															    class="paramlist_key"><?php echo $field->label; ?></td>
 															<td class="paramlist_value"><?php echo $field->input; ?></td>
 														</tr>
-													<?php endif;
-												endforeach; ?>
+													<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     endif;
+endforeach; ?>
 											</table>
 										</div>
 									<?php endforeach; ?>

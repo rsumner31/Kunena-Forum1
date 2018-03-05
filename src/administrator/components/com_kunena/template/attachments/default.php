@@ -220,7 +220,7 @@ JHtml::_('dropdown.init');
 								</div>
 							</td>
 						</tr>
-					<?php endif; ?>
+					<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                             endif; ?>
 					</tbody>
 				</table>
 			</form>

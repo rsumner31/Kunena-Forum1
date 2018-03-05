@@ -59,7 +59,7 @@ JText::script('COM_KUNENA_CATEGORIES_ERROR_CHOOSE_ANOTHER_ALIAS');
 										</a>
 									</li>
 									<?php if (!$this->category->id || !$this->category->isSection())
-										:
+:
 										?>
 										<li>
 											<a href="#tab-settings" data-toggle="tab">
@@ -73,7 +73,7 @@ JText::script('COM_KUNENA_CATEGORIES_ERROR_CHOOSE_ANOTHER_ALIAS');
 										</a>
 									</li>
 									<?php if (!$this->category->id || !$this->category->isSection())
-										:
+:
 										?>
 										<li>
 											<a href="#tab-mods" data-toggle="tab">
@@ -108,10 +108,10 @@ JText::script('COM_KUNENA_CATEGORIES_ERROR_CHOOSE_ANOTHER_ALIAS');
 														       value="<?php echo $this->escape($this->category->alias); ?>"/>
 														<?php
 														if ($this->options ['aliases'])
-															:
+:
 															?>
 															<?php echo '<span id="aliascheck">' . $this->options ['aliases'] . '</span>'; ?>
-														<?php endif ?>
+														<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         endif ?>
 													</td>
 												</tr>
 												<tr>
@@ -175,9 +175,9 @@ JText::script('COM_KUNENA_CATEGORIES_ERROR_CHOOSE_ANOTHER_ALIAS');
 												</tr>
 												</thead>
 												<?php foreach ($this->options ['accesslists'] as $accesstype => $accesslist)
-												{
+{
 													foreach ($accesslist as $accessinput)
-														:
+	:
 														?>
 														<tr class="kaccess kaccess-<?php echo $accesstype ?>"
 														    style="<?php echo $this->category->accesstype != $accesstype ? 'display:none' : '' ?>">
@@ -192,7 +192,7 @@ JText::script('COM_KUNENA_CATEGORIES_ERROR_CHOOSE_ANOTHER_ALIAS');
 									</div>
 
 									<?php if (!$this->category->id || !$this->category->isSection())
-										:
+:
 										?>
 										<div class="tab-pane" id="tab-settings">
 											<fieldset>
@@ -277,7 +277,7 @@ JText::script('COM_KUNENA_CATEGORIES_ERROR_CHOOSE_ANOTHER_ALIAS');
 										</fieldset>
 									</div>
 									<?php if (!$this->category->id || !$this->category->isSection())
-										:
+:
 										?>
 										<div class="tab-pane" id="tab-mods">
 											<fieldset>
@@ -296,24 +296,24 @@ JText::script('COM_KUNENA_CATEGORIES_ERROR_CHOOSE_ANOTHER_ALIAS');
 													<?php $i = 0;
 
 													if (empty($this->moderators))
-														:
+	:
 														?>
 														<tr>
 															<td colspan="5"
 															    align="center"><?php echo JText::_('COM_KUNENA_NOMODS') ?></td>
 														</tr>
-													<?php else
-														:
-														foreach ($this->moderators as $ml)
-															:
-															?>
-															<tr>
-																<td><?php echo $this->escape($ml->username); ?></td>
-																<td><?php echo $this->escape($ml->name); ?></td>
-																<td><?php echo $this->escape($ml->userid); ?></td>
+																										<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         else
+	:
+	foreach ($this->moderators as $ml)
+		:
+		?>
+		<tr>
+<td><?php echo $this->escape($ml->username); ?></td>
+<td><?php echo $this->escape($ml->name); ?></td>
+<td><?php echo $this->escape($ml->userid); ?></td>
 															</tr>
-														<?php endforeach;
-													endif; ?>
+	<?php                                                                                                                                                                 endforeach;
+endif; ?>
 													</tbody>
 												</table>
 											</fieldset>

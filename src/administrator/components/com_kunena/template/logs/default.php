@@ -320,12 +320,12 @@ $filterItem = $this->escape($this->state->get('item.id'));
 									?>
 									<button class="btn" type="button"
 									        onclick="document.getElements('.filter').set('value', '');this.form.submit();"><?php echo JText::_('COM_KUNENA_FIELD_LABEL_FILTERCLEAR'); ?></button>
-								<?php endif; ?>
+								<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 endif; ?>
 							</span>
 								</div>
 							</td>
 						</tr>
-					<?php endif; ?>
+					<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                         endif; ?>
 					</tbody>
 				</table>
 			</form>
